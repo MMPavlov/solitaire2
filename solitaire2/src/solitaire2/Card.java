@@ -15,7 +15,7 @@ class Card {
 	final static int width = 50;
 	final static int height = 70;
 
-	// data fields for colors and suits
+	// data fields for colors and suits fdsfsdf
 	// private static String names[] = {"A", "2", "3", "4", "5", "6",
 	// "7", "8", "9", "10", "J", "Q", "K"};
 	
