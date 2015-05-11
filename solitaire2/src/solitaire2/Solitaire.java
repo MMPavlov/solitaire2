@@ -16,7 +16,7 @@ public class Solitaire extends Applet {
 	static TablePile tableau[];
 
 	public void init() {
-		// first allocate the arrays
+		// first allocate the arrays fdsfsd
 		allPiles = new CardPile[13];
 		suitPile = new SuitPile[4];
 		tableau = new TablePile[7];
