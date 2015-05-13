@@ -1,6 +1,6 @@
 package solitaire2;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.awt.Graphics;
 
 class TablePile extends DisTabPile {
@@ -34,6 +34,8 @@ class TablePile extends DisTabPile {
 		//g.drawLine(x + 25, topCardy, x + 35, topCardy + 35);
 		
 	}
+	
+	
 
 	public boolean includes(final int tx, final int ty) {
 		// don't test bottom of card

@@ -30,18 +30,28 @@ public class Solitaire extends Applet {
 			allPiles[6 + i] = tableau[i] = new TablePile(5 + 55 * i, 80, i + 1);
 		}
 	}
-
-	public boolean mouseDown(final Event evt, final int x, final int y) {
+	int f;
+	public boolean mouseDown(final Graphics g, final Event evt, final int x, final int y) {
 		for (int i = 0; i < 13; i++) {
 			if (allPiles[i].includes(x, y)) {
+				allPiles[i].displayred(g);
+				f = 1;
+				repaint();
+		//		allPiles[i].displayred(g);
+				return true;
+				}
+			if (allPiles[i].includes(x, y) && f==1){
 				allPiles[i].select(x, y);
+				f = 0;
 				repaint();
 				return true;
 			}
 		}
+		
 		return true;
 	}
 
+	
 	public void paint(final Graphics g) {
 		for (int i = 0; i < 13; i++) {
 			allPiles[i].display(g);

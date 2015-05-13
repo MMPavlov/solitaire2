@@ -1,5 +1,8 @@
 package solitaire2;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class DisTabPile extends CardPile {
 
 	DisTabPile(int xl, int yl) {
@@ -8,6 +11,11 @@ public class DisTabPile extends CardPile {
 	}
 	
 	public void select(final int tx, final int ty) {
+		
+//		Graphics g = null;
+//		g.setColor(Color.red);
+//		g.drawRect(this.x, this.y, 50, 70);
+		
 		if (empty()) {
 			return;
 		}

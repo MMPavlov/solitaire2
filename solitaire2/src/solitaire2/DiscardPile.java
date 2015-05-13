@@ -1,5 +1,7 @@
 package solitaire2;
 
+import java.awt.Graphics;
+
 class DiscardPile extends DisTabPile {
 
 	DiscardPile(final int x, final int y) {
