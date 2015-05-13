@@ -37,14 +37,10 @@ class CardPile {
 		}
 	}
 	
-	public void displayred(final Graphics g) {
-		g.setColor(Color.red);
-		if (firstCard == null) {
-			g.drawRect(x, y, Card.width, Card.height);
-		} else {
-			firstCard.draw(g, x, y);
-		}
-	}
+//	public void displayred(final Graphics g){
+//		g.setColor(Color.red);
+//				g.drawRect(x, y, Card.width, Card.height);
+//	}
 
 	public boolean empty() {
 		return firstCard == null;

@@ -37,6 +37,7 @@ public class DisTabPile extends CardPile {
 		}
 		// nobody can use it, put it back on our list
 		addCard(topCard);
+		
 	}
 	
 	

@@ -92,6 +92,13 @@ class Card {
 		}
 	}
 
+	public void drawred(final Graphics g, final int x, final int y){
+		
+		g.setColor(Color.red);
+		g.drawRect(x, y, width, height);
+		
+	}
+	
 	public boolean isFaceUp() {
 		return faceup;
 	}

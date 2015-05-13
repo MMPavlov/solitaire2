@@ -1,5 +1,7 @@
 package solitaire2;
 
+import java.awt.Graphics;
+
 import solitaire2.Card;
 
 
@@ -47,5 +49,6 @@ class DeckPile extends CardPile {
 			}
 			
 		Solitaire.discardPile.addCard(pop());
+		
 	}
 }
