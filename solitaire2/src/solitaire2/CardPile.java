@@ -59,6 +59,18 @@ class CardPile {
 		}
 		return result;
 	}
+	
+	public Card manyPop() {
+		Card result = null;
+		if (firstCard != null) {
+			while (firstCard.link.isFaceUp()){
+				result = firstCard;
+				firstCard = firstCard.link;
+			}
+		}
+		return result;
+	}
+	
 
 	public void select(final int tx, final int ty) {
 				// do nothing
@@ -66,5 +78,27 @@ class CardPile {
 
 	public Card top() {
 		return firstCard;
+	}
+
+	public void displayred(Graphics g) {
+		g.setColor(Color.black);
+		if (firstCard == null) {
+			g.drawRect(x, y, Card.width, Card.height);
+		} else {
+			firstCard.draw(g, x, y);
+		}
+		g.setColor(Color.red);
+		g.drawRect(x, y, 50, 70);
+		
+	}
+
+	public void drawred(Graphics g, int x, int y) {
+		g.setColor(Color.red);
+		g.drawRect(x, y, 50, 70);
+		
+	}
+	
+	public void putCard(final int x, final int y){
+		
 	}
 }

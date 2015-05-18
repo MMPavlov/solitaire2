@@ -1,5 +1,6 @@
 package solitaire2;
 
+import java.awt.Color;
 //import java.awt.Color;
 import java.awt.Graphics;
 
@@ -34,7 +35,14 @@ class TablePile extends DisTabPile {
 		//g.drawLine(x + 25, topCardy, x + 35, topCardy + 35);
 		
 	}
-	
+	public void displayred(final Graphics g) {
+		stackDisplay(g, top());
+		g.setColor(Color.red);
+		g.drawRect(x, topCardy, 50, 70);
+		//g.setColor(Color.green);   //card position check for topCardy
+		//g.drawLine(x + 25, topCardy, x + 35, topCardy + 35);
+		
+	}
 	
 
 	public boolean includes(final int tx, final int ty) {
@@ -109,6 +117,10 @@ class TablePile extends DisTabPile {
 		super.addCard(aCard);
 	}
 	
-	
+	public void drawred(Graphics g, int x, int y) {
+		g.setColor(Color.red);
+		g.drawRect(x, y, 50, 70);
+		
+	}
 
 }

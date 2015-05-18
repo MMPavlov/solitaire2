@@ -12,9 +12,7 @@ public class DisTabPile extends CardPile {
 	
 	public void select(final int tx, final int ty) {
 		
-//		Graphics g = null;
-//		g.setColor(Color.red);
-//		g.drawRect(this.x, this.y, 50, 70);
+
 		
 		if (empty()) {
 			return;
